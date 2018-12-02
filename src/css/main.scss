@@ -1,5 +1,5 @@
 :root {
-  --primary: rgb(11, 19, 34);
+  --primary: #0b1322;
   --secondary: #EEDDCD;
   --interactive: #F8EB1D;
 }
@@ -13,6 +13,7 @@ body {
   background-color: var(--primary);
   color: var(--secondary);
   font-weight: 600;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -47,6 +48,9 @@ section {
     a {
       padding: 0 20px;
       line-height: 50px;
+      &:last-child {
+        padding-right:0;
+      }
     }
   }
 }
@@ -139,6 +143,7 @@ section {
     flex: 1 1 auto;
   }
   ::placeholder {
+    color: #7a7474;
     font-weight: 700;
   }
 }
@@ -206,7 +211,7 @@ section {
     width: 90%;
   }
   .intro {
-    padding-top: 150px;
+    padding-top: 100px;
   }
   .intro {
     &__text {
@@ -215,16 +220,6 @@ section {
     }
   }
 }
-
-
-
-// @media (min-width: 1200px) {
-//   .container,
-//   .header {
-//     width: 90%;
-//   }
-// }
-
 
 @media (max-width: 768px) {
   .skills {
@@ -238,9 +233,12 @@ section {
 @media (max-width: 576px) {
   .intro {
     &__text {
-      h2 {
+      h2:first-child {
         align-self: flex-start;
-        font-size: 60px;
+        font-size: 100px;
+      }
+      h2:nth-child(2) {
+        font-size: 45px;
       }
       h3 {
         font-size: 18px;

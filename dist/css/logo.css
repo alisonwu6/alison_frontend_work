@@ -1,8 +1,9 @@
 .logo {
+  font-family: 'Francois One', sans-serif;
   width: 40px;
   line-height: 1em;
   height: 50px;
-  border: 1px solid #EEDDCD;
+  border: 2px solid #EEDDCD;
   -webkit-box-shadow: 2px 2px 3px #aaa;
           box-shadow: 2px 2px 3px #aaa;
   text-align: center; }
@@ -22,12 +23,14 @@
       font-size: 18px;
       font-family: impact; }
     .logo .jersey__left, .logo .jersey__right {
-      width: 10px;
+      width: 15px;
       height: 15px;
       background-color: #EEDDCD; }
     .logo .jersey__left {
       border-radius: 0 0 100px 0; }
     .logo .jersey__right {
-      border-radius: 0 0 0 100px; }
+      border-radius: 0 0 0 100px;
+      position: relative;
+      right: -1px; }
 
 /*# sourceMappingURL=logo.css.map */

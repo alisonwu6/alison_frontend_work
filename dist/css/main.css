@@ -1,5 +1,5 @@
 :root {
-  --primary: rgb(11, 19, 34);
+  --primary: #0b1322;
   --secondary: #EEDDCD;
   --interactive: #F8EB1D; }
 
@@ -10,7 +10,8 @@ html {
 body {
   background-color: var(--primary);
   color: var(--secondary);
-  font-weight: 600; }
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif; }
 
 .container {
   margin: 0 auto;
@@ -43,6 +44,8 @@ section {
   .header .nav a {
     padding: 0 20px;
     line-height: 50px; }
+    .header .nav a:last-child {
+      padding-right: 0; }
 
 .intro {
   padding-top: 250px;
@@ -146,12 +149,15 @@ section {
           flex: 1 1 auto; }
 
 .contact ::-webkit-input-placeholder {
+  color: #7a7474;
   font-weight: 700; }
 
 .contact ::-ms-input-placeholder {
+  color: #7a7474;
   font-weight: 700; }
 
 .contact ::placeholder {
+  color: #7a7474;
   font-weight: 700; }
 
 .footer {
@@ -191,7 +197,7 @@ section {
   .container, .header {
     width: 90%; }
   .intro {
-    padding-top: 150px; }
+    padding-top: 100px; }
   .intro__text {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
@@ -204,10 +210,12 @@ section {
     margin-bottom: 20px; } }
 
 @media (max-width: 576px) {
-  .intro__text h2 {
+  .intro__text h2:first-child {
     -ms-flex-item-align: start;
         align-self: flex-start;
-    font-size: 60px; }
+    font-size: 100px; }
+  .intro__text h2:nth-child(2) {
+    font-size: 45px; }
   .intro__text h3 {
     font-size: 18px;
     padding-top: 20px; }
