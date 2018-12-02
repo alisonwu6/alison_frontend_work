@@ -1,0 +1,257 @@
+:root {
+  --primary: rgb(11, 19, 34);
+  --secondary: #EEDDCD;
+  --interactive: #F8EB1D;
+}
+
+/* OVERALL SETTING */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--primary);
+  color: var(--secondary);
+  font-weight: 600;
+}
+
+.container {
+  margin: 0 auto; 
+  width: 1140px;
+  text-align: center;
+  display: grid;
+  grid-gap: 50px;
+}
+
+section {
+  padding-top: 50px;
+}
+
+/* header */
+.header {
+  line-height: 100px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 1140px;
+  z-index: 10;
+  display: flex;
+  background-color: rgba(11, 19, 34, .8);
+  .logo {
+    align-self: center;
+    margin-right: auto;
+    color: var(--secondary);
+  }
+  .nav {
+    a {
+      padding: 0 20px;
+      line-height: 50px;
+    }
+  }
+}
+
+
+
+.intro {
+  padding-top: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  &__text {
+    display: flex;
+    flex-direction: column;
+    h2:first-child {
+      align-self: flex-start;
+    }
+    h2:last-child {
+      align-self: flex-end;
+    }
+    h3 {
+      padding-top: 20px;
+    }
+  }
+  &__img {
+    background-image: linear-gradient( rgba(211, 203, 203, 0.966),transparent);
+    height: 100%;
+    img {
+      width: 250px;
+      height: auto;
+    } 
+  }
+}
+
+.skills {
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    line-height: 2em;
+    text-align: left;
+  }
+  &__item {
+    padding: 10px 0px 10px 30px;
+    width: 20%;
+    border-radius: 5px;
+    background-color: var(--secondary);
+    color: var(--primary);
+  }
+}
+
+.portfolio {
+  &__items {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  &__item {
+    flex: 0 0 auto;
+    padding-right: 50px;
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
+.contact {
+  &__form {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-flow: column nowrap;
+    >*:not(.contact__button) {
+      margin-bottom: 15px;
+      padding: 20px;
+      background-color: #aca9a9;
+      border: 3px solid #756a6a;
+    }
+  }
+  &__button {
+    align-self: center;
+    margin-top:30px;
+    padding: 20px;
+    width: 200px;
+    background: var(--interactive);
+    border: none;
+    color: var(--primary);
+    border-radius: 2px;
+    font-weight: 700;
+    flex: 1 1 auto;
+  }
+  ::placeholder {
+    font-weight: 700;
+  }
+}
+
+.footer {
+  padding: 20px 0;
+  .socialmedia {
+    a {
+      display: inline-block;
+      font-size: 30px;
+      width: 30px;
+      height: 30px;
+      padding: 20px;
+    }
+    a:hover {
+      color: var(--interactive);
+    }
+  }
+}
+
+/* RESUE */
+.text--shadow {
+  color: var(--secondary);
+  text-shadow: 0 1px 0px var(--primary),
+    1px 0 0px #237da3,
+    1px 2px 1px #0c4866,
+    2px 1px 1px #237da3,
+    2px 3px 2px #0c4866,
+    3px 2px 2px #237da3,
+    3px 4px 2px #0c4866,
+    4px 3px 3px #237da3,
+    4px 5px 3px #0c4866,
+    5px 4px 2px #237da3,
+    5px 6px 2px #0c4866,
+    6px 5px 2px #237da3,
+    6px 7px 1px #0c4866,
+    7px 6px 1px #237da3,
+    7px 8px 0px #0c4866,
+    8px 7px 0px #237da3;
+}
+
+.text--decoration {
+  margin: 15px auto 25px auto;
+  width: 8%;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #969393;
+  opacity: 0.5;
+}
+
+.description__title {
+  margin-top: 50px;
+  font-size: 40px;
+}
+
+.description__subtitle {
+  margin: 25px 0 60px 0;
+  font-size: 18px;
+}
+
+/* RWD */
+
+@media (max-width: 1024px) {
+  .container, .header {
+    width: 90%;
+  }
+  .intro {
+    padding-top: 150px;
+  }
+  .intro {
+    &__text {
+      order: -1;
+      padding-bottom: 30px;
+    }
+  }
+}
+
+
+
+// @media (min-width: 1200px) {
+//   .container,
+//   .header {
+//     width: 90%;
+//   }
+// }
+
+
+@media (max-width: 768px) {
+  .skills {
+    &__item {
+      width: 40%;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .intro {
+    &__text {
+      h2 {
+        align-self: flex-start;
+        font-size: 60px;
+      }
+      h3 {
+        font-size: 18px;
+        padding-top: 20px;
+      }
+    }
+  }
+  .skills {
+    &__item {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+}

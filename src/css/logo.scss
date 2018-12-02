@@ -1,0 +1,36 @@
+.logo {
+  width: 40px;
+  line-height: 1em;
+  height: 50px;
+  border: 1px solid #EEDDCD;
+  box-shadow: 2px 2px 3px #aaa;
+  text-align: center;
+  .jersey {
+    display: flex;
+    justify-content: space-between;
+    &__middle {
+      padding-top:7px;
+    }
+    &__name {
+      font-size: 12px;
+      font-family: impact;
+    }
+    &__number {
+      font-size: 18px;
+      font-family: impact;
+    }
+    &__left,
+    &__right {
+      width: 10px;
+      height: 15px;
+      background-color: #EEDDCD;
+    }
+    &__left {
+      border-radius: 0 0 100px 0;
+    }
+    &__right {
+      border-radius: 0 0 0 100px;
+    }
+  }
+}
+

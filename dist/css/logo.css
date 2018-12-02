@@ -1,0 +1,33 @@
+.logo {
+  width: 40px;
+  line-height: 1em;
+  height: 50px;
+  border: 1px solid #EEDDCD;
+  -webkit-box-shadow: 2px 2px 3px #aaa;
+          box-shadow: 2px 2px 3px #aaa;
+  text-align: center; }
+  .logo .jersey {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .logo .jersey__middle {
+      padding-top: 7px; }
+    .logo .jersey__name {
+      font-size: 12px;
+      font-family: impact; }
+    .logo .jersey__number {
+      font-size: 18px;
+      font-family: impact; }
+    .logo .jersey__left, .logo .jersey__right {
+      width: 10px;
+      height: 15px;
+      background-color: #EEDDCD; }
+    .logo .jersey__left {
+      border-radius: 0 0 100px 0; }
+    .logo .jersey__right {
+      border-radius: 0 0 0 100px; }
+
+/*# sourceMappingURL=logo.css.map */

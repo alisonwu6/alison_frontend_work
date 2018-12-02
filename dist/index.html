@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Alison Wu | Front-end Developer</title>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/basic.css"/>
+    <link rel="stylesheet" href="css/logo.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"/>
+  </head>
+  <body></body>
+  <div class="container">
+    <header class="header"><a class="logo" href="#intro">
+        <div class="jersey">
+          <div class="jersey__left"></div>
+          <div class="jersey__middle">
+            <div class="jersey__name">WU</div>
+            <div class="jersey__number">6</div>
+          </div>
+          <div class="jersey__right"></div>
+        </div></a>
+      <nav class="nav"><a href="#skills">Skills</a><a href="#portfolio">Portfolio</a><a href="#contact">Contact</a></nav>
+    </header>
+    <main class="intro" id="intro">
+      <div class="intro__img"><img src="images/alisonwu.png" alt="Alison Wu"/></div>
+      <div class="intro__text">
+        <h2 class="text--shadow">Hello.</h2>
+        <h2 class="text--shadow">I am Alison.</h2>
+        <h3>A self-taught Front-end Developer.</h3>
+      </div>
+    </main>
+    <section class="skills" id="skills">
+      <div class="description">
+        <h3 class="description__title">Skills</h3>
+        <div class="text--decoration"></div>
+        <p class="description__subtitle">Code for system, Not for pages.</p>
+      </div>
+      <div class="skills__items">
+        <div class="skills__item">
+          <h4>HTML :</h4>
+          <ul>
+            <li>Pug</li>
+            <li>Semantic Tags for SEO</li>
+            <li>Reduce unnecessary nested structure</li>
+            <li>Emmet for efficiency</li>
+          </ul>
+        </div>
+        <div class="skills__item">
+          <h4>CSS :</h4>
+          <ul>
+            <li>SASS</li>
+            <li>BEM Naming Style</li>
+            <li>OOCSS</li>
+            <li>Grid - Layout First</li>
+            <li>Flexbox - Content First</li>
+            <li>CSS Variables</li>
+          </ul>
+        </div>
+        <div class="skills__item">
+          <h4>JavaScript :</h4>
+          <ul>
+            <li>jQuery</li>
+            <li>Validation</li>
+            <li>Ajax</li>
+            <li>Using RESTful API</li>
+            <li>vue.js</li>
+          </ul>
+        </div>
+        <div class="skills__item">
+          <h4>Others :</h4>
+          <ul>
+            <li>Gulp </li>
+            <li>Git Version Control</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+      <div class="description">
+        <h3 class="description__title">Portfolio</h3>
+        <div class="text--decoration"></div>
+        <p class="description__subtitle">I am working on it.</p>
+      </div>
+      <div class="portfolio__items">
+        <div class="portfolio__item"><img src="https://fakeimg.pl/300x300/ff0000/" alt=""/></div>
+        <div class="portfolio__item"><img src="https://fakeimg.pl/300x300/ff0000/" alt=""/></div>
+        <div class="portfolio__item"><img src="https://fakeimg.pl/300x300/ff0000/" alt=""/></div>
+        <div class="portfolio__item"><img src="https://fakeimg.pl/300x300/ff0000/" alt=""/></div>
+        <div class="portfolio__item"><img src="https://fakeimg.pl/300x300/ff0000/" alt=""/></div>
+        <div class="portfolio__item"><img src="https://fakeimg.pl/300x300/ff0000/" alt=""/></div>
+        <div class="portfolio__item"><img src="https://fakeimg.pl/300x300/ff0000/" alt=""/></div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="description">
+        <h3 class="description__title">Contact</h3>
+        <div class="text--decoration"></div>
+        <p class="description__subtitle">Get in touch with me.</p>
+      </div>
+      <form class="contact__form">
+        <input id="name" type="text" name="text" placeholder="Your name" required="required"/>
+        <input id="email" type="email" name="email" placeholder="Your email" required="required"/>
+        <textarea id="message" name="message" cols="30" rows="10" placeholder="Comment" required="required"></textarea>
+        <button class="contact__button" type="submit">Send it</button>
+      </form>
+    </section>
+    <footer class="footer">
+      <div class="socialmedia"><a class="fab fa-github" href="https://github.com/alisonwu6" title="Github" target="_blank"></a><a class="fab fa-free-code-camp" href="https://freecodecamp.org/alisonwu_6" title="Free Code Camp" target="_blank"></a></div>
+      <div>&copy; 2018 | Alison Wu</div>
+    </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
+  <script src="js/main.js"></script>
+</html>
