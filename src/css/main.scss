@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-  margin: 0 auto; 
+  margin: 0 auto;
   width: 1140px;
   text-align: center;
   display: grid;
@@ -39,17 +39,20 @@ section {
   z-index: 10;
   display: flex;
   background-color: rgba(11, 19, 34, .8);
+
   .logo {
     align-self: center;
     margin-right: auto;
     color: var(--secondary);
   }
+
   .nav {
     a {
       padding: 0 20px;
       line-height: 50px;
+
       &:last-child {
-        padding-right:0;
+        padding-right: 0;
       }
     }
   }
@@ -62,26 +65,32 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+
   &__text {
     display: flex;
     flex-direction: column;
+
     h2:first-child {
       align-self: flex-start;
     }
+
     h2:last-child {
       align-self: flex-end;
     }
+
     h3 {
       padding-top: 20px;
     }
   }
+
   &__img {
-    background-image: linear-gradient( rgba(211, 203, 203, 0.966),transparent);
+    background-image: linear-gradient(rgba(211, 203, 203, 0.966), transparent);
     height: 100%;
+
     img {
       width: 250px;
       height: auto;
-    } 
+    }
   }
 }
 
@@ -93,6 +102,7 @@ section {
     line-height: 2em;
     text-align: left;
   }
+
   &__item {
     padding: 10px 0px 10px 30px;
     width: 20%;
@@ -108,14 +118,32 @@ section {
     flex-wrap: nowrap;
     overflow-x: auto;
   }
+
   &__item {
+    border-radius: 5px;
+    background: var(--secondary);
+    color: var(--primary);
     flex: 0 0 auto;
-    padding-right: 50px;
-    &:last-child {
-      padding-right: 0;
+    margin-right: 50px;
+
+    img {
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+    }
+
+    h5 {
+      text-decoration: underline;
+      font-size: 700;
+      margin: 0;
+      line-height: 70px;
     }
   }
+
+  &:last-child {
+    padding-right: 0;
+  }
 }
+
 
 .contact {
   &__form {
@@ -123,6 +151,7 @@ section {
     width: 90%;
     display: flex;
     flex-flow: column nowrap;
+
     >*:not(.contact__button) {
       margin-bottom: 15px;
       padding: 20px;
@@ -130,9 +159,10 @@ section {
       border: 3px solid #756a6a;
     }
   }
+
   &__button {
     align-self: center;
-    margin-top:30px;
+    margin-top: 30px;
     padding: 20px;
     width: 200px;
     background: var(--interactive);
@@ -142,6 +172,7 @@ section {
     font-weight: 700;
     flex: 1 1 auto;
   }
+
   ::placeholder {
     color: #7a7474;
     font-weight: 700;
@@ -150,6 +181,7 @@ section {
 
 .footer {
   padding: 20px 0;
+
   .socialmedia {
     a {
       display: inline-block;
@@ -158,13 +190,14 @@ section {
       height: 30px;
       padding: 20px;
     }
+
     a:hover {
       color: var(--interactive);
     }
   }
 }
 
-/* RESUE */
+/* REUSE */
 .text--shadow {
   color: var(--secondary);
   text-shadow: 0 1px 0px var(--primary),
@@ -207,12 +240,16 @@ section {
 /* RWD */
 
 @media (max-width: 1024px) {
-  .container, .header {
+
+  .container,
+  .header {
     width: 90%;
   }
+
   .intro {
     padding-top: 100px;
   }
+
   .intro {
     &__text {
       order: -1;
@@ -237,15 +274,18 @@ section {
         align-self: flex-start;
         font-size: 100px;
       }
+
       h2:nth-child(2) {
         font-size: 45px;
       }
+
       h3 {
         font-size: 18px;
         padding-top: 20px;
       }
     }
   }
+
   .skills {
     &__item {
       width: 100%;

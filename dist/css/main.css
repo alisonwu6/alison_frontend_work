@@ -110,12 +110,24 @@ section {
   overflow-x: auto; }
 
 .portfolio__item {
+  border-radius: 5px;
+  background: var(--secondary);
+  color: var(--primary);
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
-  padding-right: 50px; }
-  .portfolio__item:last-child {
-    padding-right: 0; }
+  margin-right: 50px; }
+  .portfolio__item img {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px; }
+  .portfolio__item h5 {
+    text-decoration: underline;
+    font-size: 700;
+    margin: 0;
+    line-height: 70px; }
+
+.portfolio:last-child {
+  padding-right: 0; }
 
 .contact__form {
   margin: auto;
@@ -171,7 +183,7 @@ section {
   .footer .socialmedia a:hover {
     color: var(--interactive); }
 
-/* RESUE */
+/* REUSE */
 .text--shadow {
   color: var(--secondary);
   text-shadow: 0 1px 0px var(--primary), 1px 0 0px #237da3, 1px 2px 1px #0c4866, 2px 1px 1px #237da3, 2px 3px 2px #0c4866, 3px 2px 2px #237da3, 3px 4px 2px #0c4866, 4px 3px 3px #237da3, 4px 5px 3px #0c4866, 5px 4px 2px #237da3, 5px 6px 2px #0c4866, 6px 5px 2px #237da3, 6px 7px 1px #0c4866, 7px 6px 1px #237da3, 7px 8px 0px #0c4866, 8px 7px 0px #237da3; }
@@ -194,7 +206,8 @@ section {
 
 /* RWD */
 @media (max-width: 1024px) {
-  .container, .header {
+  .container,
+  .header {
     width: 90%; }
   .intro {
     padding-top: 100px; }
