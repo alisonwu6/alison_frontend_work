@@ -79,7 +79,9 @@ section {
     background-image: linear-gradient(rgba(211, 203, 203, 0.966), transparent);
     height: 100%; }
     .intro__img img {
-      width: 250px;
+      width: 450px;
+      border-top-left-radius: 100px;
+      border-bottom-right-radius: 100px;
       height: auto; }
 
 .skills__items {
@@ -118,6 +120,8 @@ section {
           flex: 0 0 auto;
   margin-right: 50px; }
   .portfolio__item img {
+    width: 320px;
+    height: 240px;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px; }
   .portfolio__item h5 {
