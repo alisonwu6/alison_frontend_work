@@ -73,15 +73,11 @@ section {
     .intro__text h3 {
       padding-top: 20px; }
   .intro__img {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(211, 203, 203, 0.966)), to(transparent));
-    background-image: -webkit-linear-gradient(rgba(211, 203, 203, 0.966), transparent);
-    background-image: -o-linear-gradient(rgba(211, 203, 203, 0.966), transparent);
-    background-image: linear-gradient(rgba(211, 203, 203, 0.966), transparent);
     height: 100%; }
     .intro__img img {
-      width: 450px;
-      border-top-left-radius: 100px;
-      border-bottom-right-radius: 100px;
+      width: 250px;
+      border-top-left-radius: 50px;
+      border-bottom-right-radius: 50px;
       height: auto; }
 
 .skills__items {
@@ -102,6 +98,10 @@ section {
   border-radius: 5px;
   background-color: var(--secondary);
   color: var(--primary); }
+
+.sub__item {
+  padding-left: 30px;
+}
 
 .portfolio__items {
   display: -webkit-box;
